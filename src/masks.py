@@ -8,7 +8,7 @@ def get_mask_card_number(card_number: str) -> str:
 def get_mask_account(account: str) -> str:
     """Функция принимает номер счета и возвращает его маску, скрывающую большую часть кроме
     последних четырех символов.
-    :rtype: str"""
+    """
     account_mask = "**" + account[-4:]
     return account_mask
 
