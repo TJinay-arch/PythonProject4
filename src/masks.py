@@ -5,7 +5,7 @@ def get_mask_card_number(card_number: str) -> str:
     return card_mask
 
 
-def get_mask_account(account: str) -> str:
+def get_mask_account_number(account: str) -> str:
     """Функция принимает номер счета и возвращает его маску, скрывающую большую часть кроме
     последних четырех символов.
     """

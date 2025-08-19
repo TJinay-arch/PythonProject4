@@ -1,10 +1,10 @@
-import masks
+from src import masks
 
 
 def mask_account_card(input_string: str) -> str:
     """функция для маскировки номера карты или счета, возвращает значение в формате строки"""
     if "Счет" in input_string:
-        changed_string_second_part: str = masks.get_mask_account(input_string[-20:])
+        changed_string_second_part: str = masks.get_mask_account_number(input_string[-20:])
         changed_string_first_part: str = input_string[:-20]
         return changed_string_first_part + changed_string_second_part
     else:
